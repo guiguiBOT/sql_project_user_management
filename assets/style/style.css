@@ -1,0 +1,122 @@
+body {
+    background-color: rgb(255, 234, 189);
+    font-family: 'Rajdhani', sans-serif;
+}
+
+input {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+H1 {
+    text-align: center;
+}
+
+#mainContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#tableContainer {
+    display: flex;
+}
+
+#tableContainer td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+#tableContainer th {
+    border: 1px solid black;
+    padding: 5px;
+    height: 30px;
+    background-color: rgb(255, 188, 134);
+}
+
+#tableHeading th {
+    height: 50px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+button {
+    user-select: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgb(253, 154, 73);
+}
+
+button:hover {
+    background-color: rgb(255, 192, 140);
+}
+
+.tdButton {
+    background-color: rgb(255, 188, 134);
+    border: 0px;
+}
+
+#addFormContainer {
+    margin-left: 50px;
+    width: 220px;
+}
+
+#addFormContainer p {
+    text-align: center;
+    font-weight: bold;
+}
+
+#addFormContainer form {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    gap: 15px;
+}
+
+.idCol {
+    background-color: rgb(255, 188, 134);
+    font-weight: bold;
+}
+
+.nameCol {
+    min-width: 100px;
+}
+
+.firstnameCol {
+    min-width: 100px;
+}
+
+.mailCol {
+    min-width: 200px;
+}
+
+.errorClass {
+    width: 220px;
+    height: 30px;
+}
+
+#errorArea {
+    font-size: 1em;
+    color: rgb(231, 46, 46);
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(255, 188, 134);
+    animation-duration: 1s;
+    animation-name: alert;
+    animation-iteration-count: infinite;
+}
+
+@keyframes alert {
+    0% {background-color: rgb(243, 243, 113);}
+    50% {background-color: rgb(241, 186, 103);}
+    100% {background-color: rgb(243, 243, 113);}
+}
